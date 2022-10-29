@@ -1,0 +1,12 @@
+#include "avyana_map_messages/msg/MapPrimitive.idl"
+
+module avyana_map_messages {
+  module msg {
+    @verbatim (language="comment", text=
+      " A segment of an HDMap which contains one or more MapPrimitives.")
+    struct HDMapSegment {
+      sequence<avyana_map_messages::msg::MapPrimitive> primitives;
+      int64 preferred_primitive_id;
+    };
+  };
+};
