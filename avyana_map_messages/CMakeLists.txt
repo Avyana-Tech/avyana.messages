@@ -9,7 +9,11 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/HDMapBin.idl"
   "msg/HDMapSegment.idl"
   "msg/MapPrimitive.idl"
+  "msg/HDMapRoute.idl"
   DEPENDENCIES
+    "builtin_interfaces"
+    "geometry_msgs"
+    "nav_msgs"
     "std_msgs"
   ADD_LINTER_TESTS
 )
